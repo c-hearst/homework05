@@ -30,9 +30,63 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-    </div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td scope="row" class = "hour">9am</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row" class = "hour">10am</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+          </tr>
+          <tr>
+            <td scope="row" class = "hour">11am</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">12pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type ="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">1pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">2pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">3pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">4pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+          <tr>
+            <td scope="row" class = "hour">5pm</th>
+            <td><textarea class = "time-block"></textarea></td>
+            <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
+            </tr>
+        </tbody>
+      </table>
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      const today = moment();
+      var displayDate = $("#currentDay").text(moment().format('dddd, MMMM Do YYYY'));
+          </script>
   </body>
 </html>

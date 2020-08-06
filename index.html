@@ -33,48 +33,48 @@
       <table class="table">
         <tbody>
           <tr>
-            <td scope="row" class = "hour">9am</th>
+            <td scope="row" class = "hour" id = "firstHour" data-time="9">9am</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </td>
           </tr>
           <tr>
-            <td scope="row" class = "hour">10am</th>
+            <td scope="row" class = "hour" id = "secondHour" data-time="10">10am</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
           </tr>
           <tr>
-            <td scope="row" class = "hour">11am</th>
+            <td scope="row" class = "hour" id = "thirdHour" data-time="11">11am</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">12pm</th>
+            <td scope="row" class = "hour" id = "fourthHour" data-time="12">12pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type ="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">1pm</th>
+            <td scope="row" class = "hour" id = "fifthHour" data-time="13">1pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">2pm</th>
+            <td scope="row" class = "hour" id = "sixthHour" data-time="14">2pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">3pm</th>
+            <td scope="row" class = "hour" id = "seventhHour" data-time="15">3pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">4pm</th>
+            <td scope="row" class = "hour" id = "eighthHour" data-time="16">4pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
           <tr>
-            <td scope="row" class = "hour">5pm</th>
+            <td scope="row" class = "hour" id = "ninthHour" data-time="17">5pm</th>
             <td><textarea class = "time-block"></textarea></td>
             <td class = "saveBtn"><button type="button" class="saveBtn">Save</button>
             </tr>
@@ -85,8 +85,26 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
-      const today = moment();
+      const currentHour = moment().hours();
+      $(".hour").each(function(){
+        console.log("data-time");
+
+      });
+
+
+
+
+
+
+
       var displayDate = $("#currentDay").text(moment().format('dddd, MMMM Do YYYY'));
+      var currentTime = moment().format('h');
+      var firstHour = document.getElementById("firstHour");
+      console.log(currentTime);
+      function colorCode() {
+        if ((".hour").each) 
+      };
+      colorCode();
           </script>
   </body>
 </html>

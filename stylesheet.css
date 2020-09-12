@@ -1,0 +1,9 @@
+.container {
+  border: 2px gray;
+  padding: 20px;
+}
+
+.timeSlot {
+  float: left;
+  margin-right: 10px;
+}
